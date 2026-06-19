@@ -1,0 +1,142 @@
+{
+  "theme": "light",
+  "archetype": "Organic & Earthy + Luxury",
+  "brand": "The Basic Ecosystem",
+  "colors": {
+    "background": "#F9F7F4",
+    "surface": "#F2EFE9",
+    "primary": "#4A3B32",
+    "secondary": "#8C7A6B",
+    "accent": "#C19A6B",
+    "text_main": "#2C2420",
+    "text_muted": "#73655D",
+    "border": "#E5DFD5"
+  },
+  "tailwind_classes": {
+    "bg_main": "bg-[#F9F7F4]",
+    "bg_surface": "bg-[#F2EFE9]",
+    "text_primary": "text-[#4A3B32]",
+    "text_secondary": "text-[#8C7A6B]",
+    "text_accent": "text-[#C19A6B]",
+    "text_main": "text-[#2C2420]",
+    "border_color": "border-[#E5DFD5]",
+    "ring_color": "ring-[#C19A6B]"
+  },
+  "typography": {
+    "font_family_heading": "Cormorant Garamond, serif",
+    "font_family_body": "Outfit, sans-serif",
+    "h1": "text-5xl md:text-6xl font-serif font-light tracking-tight text-[#2C2420] leading-[1.1]",
+    "h2": "text-3xl md:text-4xl font-serif font-light tracking-tight text-[#2C2420]",
+    "h3": "text-2xl font-serif font-medium text-[#2C2420]",
+    "h4": "text-lg font-sans font-medium tracking-wide text-[#4A3B32] uppercase",
+    "body": "text-base md:text-lg font-sans font-light leading-relaxed text-[#4A3B32]",
+    "small": "text-sm font-sans font-light tracking-[0.1em] uppercase text-[#73655D]"
+  },
+  "layout_spacing": {
+    "section_padding": "py-24 md:py-32",
+    "container": "w-full max-w-7xl mx-auto px-6 md:px-12",
+    "grid_bento": "grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-12"
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-[#4A3B32] text-[#F9F7F4] hover:bg-[#2C2420] transition-colors duration-300 rounded-none px-8 py-4 text-sm font-sans tracking-[0.2em] uppercase",
+      "secondary": "border border-[#4A3B32] text-[#4A3B32] hover:bg-[#4A3B32] hover:text-[#F9F7F4] transition-colors duration-300 rounded-none px-8 py-4 text-sm font-sans tracking-[0.2em] uppercase"
+    },
+    "cards": {
+      "glass": "backdrop-blur-2xl bg-[#F9F7F4]/70 border border-[#E5DFD5]/50 shadow-[0_8px_32px_rgba(74,59,50,0.05)]",
+      "solid": "bg-[#F2EFE9] border border-[#E5DFD5] p-8 md:p-12",
+      "dark_glass": "backdrop-blur-xl bg-[#2C2420]/60 border border-white/10 shadow-xl"
+    },
+    "inputs": {
+      "base": "flex h-12 w-full border-b border-[#8C7A6B] bg-transparent px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-[#8C7A6B]/70 focus-visible:outline-none focus-visible:border-[#4A3B32] disabled:cursor-not-allowed disabled:opacity-50 transition-colors"
+    },
+    "navigation": "fixed top-0 w-full z-50 backdrop-blur-xl bg-[#F9F7F4]/80 border-b border-[#E5DFD5]/50 transition-all duration-300 py-4"
+  },
+  "animations": {
+    "scroll_reveal": "framer-motion initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-100px' }} transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}",
+    "stagger_children": "variants={{ hidden: { opacity: 0 }, visible: { opacity: 1, transition: { staggerChildren: 0.1 } } }}",
+    "item_variant": "variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] } } }}"
+  },
+  "icons": {
+    "library": "lucide-react",
+    "style": "stroke-[1.5] text-[#8C7A6B] w-6 h-6"
+  },
+  "media": {
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2MzR8MHwxfHNlYXJjaHwyfHxsdXh1cnklMjBtb2Rlcm4lMjB2aWxsYXxlbnwwfHx8fDE3ODE4NTA1NjV8MA&ixlib=rb-4.1.0&q=85",
+        "category": "hero",
+        "description": "Luxury modern villa exterior. Use as the background of the Hero section with a dark overlay (bg-black/30) to make text readable."
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1682184805271-11671b7ecf4c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzZ8MHwxfHNlYXJjaHwyfHxhcmNoaXRlY3R1cmUlMjBpbnRlcmlvciUyMGRlc2lnbnxlbnwwfHx8fDE3ODE4NTA1NjV8MA&ixlib=rb-4.1.0&q=85",
+        "category": "studio_step",
+        "description": "Modern living room with a large window. Use for 'The Basic Studio - Design for Yield' step in How It Works."
+      },
+      {
+        "url": "https://images.pexels.com/photos/7820689/pexels-photo-7820689.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "category": "operate_step",
+        "description": "A hand pressing a bell at a hotel reception. Use for 'The Basic - Operate for Growth' step in How It Works."
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1613977257363-707ba9348227?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2MzR8MHwxfHNlYXJjaHwzfHxsdXh1cnklMjBtb2Rlcm4lMjB2aWxsYXxlbnwwfHx8fDE3ODE4NTA1NjV8MA&ixlib=rb-4.1.0&q=85",
+        "category": "results_background",
+        "description": "White and blue swimming pool of a luxury villa. Use as the background for the 'Results We Deliver' section to create a premium feel."
+      }
+    ]
+  },
+  "page_sections": [
+    {
+      "name": "Navigation",
+      "layout": "Sticky header, Crystal glassmorphism.",
+      "details": "Includes Logo ('The Basic Ecosystem' in Serif), Desktop Nav links (Studio, Operate, Why Us, Results), and a primary 'Book Consultation' CTA. Mobile uses a clean slide-out menu."
+    },
+    {
+      "name": "Hero",
+      "layout": "min-h-screen relative flex items-center justify-center text-center px-6",
+      "details": "Background image (hero) + `bg-black/40` overlay. H1: 'Transforming Properties into Profitable Hospitality Assets.' Subheadline below it. Two CTAs side-by-side: Primary ('Book a Consultation'), Secondary ('Explore Our Ecosystem'). All text in white/light cream for contrast."
+    },
+    {
+      "name": "How The Basic Ecosystem Works",
+      "layout": "Bento Grid Mode A ('Tetris' Grid) with generous spacing (`py-32`).",
+      "details": "Two distinct blocks: Step 1 (Studio) and Step 2 (Operations). For each block, show an image (studio_step / operate_step) offset from the text. Use overlapping or staggered alignments (Asymmetry)."
+    },
+    {
+      "name": "Who We Work With",
+      "layout": "Grid of minimal items, `grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12`.",
+      "details": "Audiences: Property Owners, Villa Owners, Developers, Investors, NRI Property Owners. Minimalist presentation: just a subtle icon, a hairline top border, and elegant typography."
+    },
+    {
+      "name": "Why Choose Us",
+      "layout": "List-based asymmetric layout.",
+      "details": "6-point value props (End-to-end ownership, etc.). Use massive typography counters (01, 02) in `font-light text-[#E5DFD5]` behind or beside the content. Groupings should feel editorial."
+    },
+    {
+      "name": "Results We Deliver",
+      "layout": "Dark theme / Image-backed section. `py-32 relative`.",
+      "details": "Background uses 'results_background' image with heavy dark overlay (`bg-[#2C2420]/80`). The metrics (Higher Occupancy, Better Yield, etc.) sit in `dark_glass` cards."
+    },
+    {
+      "name": "Consultation Booking",
+      "layout": "Split layout: Left side typography, Right side Shadcn form.",
+      "details": "Form must include Name, Email, Phone, Property Type (Shadcn Select), Message (Textarea). Use Shadcn Form, tailored with the 'inputs.base' classes (minimal bottom borders instead of full boxes). Include mock email notification logic in component."
+    },
+    {
+      "name": "Footer",
+      "layout": "Massive spacing `py-20 bg-[#2C2420] text-[#F9F7F4]`.",
+      "details": "Brand identity, secondary links, minimalist copyright."
+    }
+  ],
+  "accessibility_and_testing": {
+    "data_testid_rules": "All interactive elements, forms, and navigation links MUST include a `data-testid` attribute (e.g., `data-testid=\"hero-cta-button\"`, `data-testid=\"consultation-form-submit\"`).",
+    "contrast": "Ensure text over images has sufficient shadow or overlay to meet WCAG AA standards. Focus states on forms must be visible (use ring_color)."
+  },
+  "instructions_to_main_agent": [
+    "Use pure HTML and Tailwind CSS for page layout and marketing sections. Do not use generic Shadcn layout cards for the main sections; keep it editorial.",
+    "Use Shadcn UI ONLY for the consultation form components (Input, Textarea, Select, Button, Form) and customize them to fit the minimal bottom-border aesthetic.",
+    "Use Framer Motion to implement the 'scroll_reveal' animations for text blocks and images.",
+    "Ensure the hero section uses the specified background image and a proper gradient/overlay for text readability.",
+    "Implement the site as a single-page scrolling website with smooth scrolling.",
+    "Include `data-testid` on all buttons, form inputs, and major sections."
+  ]
+}
