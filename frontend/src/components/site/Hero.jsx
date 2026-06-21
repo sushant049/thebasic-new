@@ -1,0 +1,143 @@
+import { motion } from "framer-motion";
+import { ArrowDown, ArrowUpRight } from "lucide-react";
+
+const HERO_IMG =
+  "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?crop=entropy&cs=srgb&fm=jpg&q=85&w=2400";
+
+export const Hero = () => {
+  const scrollTo = (id) => {
+    const el = document.querySelector(id);
+    if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
+  return (
+    <section
+      id="top"
+      data-testid="hero-section"
+      className="relative min-h-screen flex items-end overflow-hidden"
+    >
+      {/* Background image */}
+      <div className="absolute inset-0">
+        <img
+          src={HERO_IMG}
+          alt="Luxury hospitality villa exterior"
+          className="w-full h-full object-cover"
+          loading="eager"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#2C2420]/70 via-[#2C2420]/30 to-[#2C2420]/85" />
+      </div>
+
+      {/* Top eyebrow */}
+      <div className="absolute top-28 left-0 right-0 z-10">
+        <div className="w-full max-w-7xl mx-auto px-6 md:px-12">
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.4 }}
+            className="flex items-center gap-3"
+          >
+            <span className="h-px w-10 bg-[#C19A6B]" />
+            <span className="text-[10px] tracking-[0.32em] uppercase text-[#C19A6B]">
+              Hospitality Asset Ecosystem
+            </span>
+          </motion.div>
+        </div>
+      </div>
+
+      {/* Main content */}
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-12 pb-24 md:pb-32">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-end">
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1] }}
+            className="md:col-span-8"
+          >
+            <h1
+              data-testid="hero-headline"
+              className="font-serif font-light text-[#F9F7F4] text-5xl sm:text-6xl md:text-7xl lg:text-[88px] leading-[0.98] tracking-tight"
+            >
+              Transforming properties into{" "}
+              <em className="not-italic font-normal text-[#E0C9A6]">
+                profitable hospitality
+              </em>{" "}
+              assets.
+            </h1>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.9, delay: 0.35 }}
+            className="md:col-span-4 md:pl-6 md:border-l md:border-[#F9F7F4]/20"
+          >
+            <p
+              data-testid="hero-subheadline"
+              className="text-[#F9F7F4]/85 font-light text-base md:text-[17px] leading-relaxed"
+            >
+              We design, develop, and professionally operate hospitality assets
+              that deliver higher occupancy and sustainable returns — for
+              owners who think like investors.
+            </p>
+
+            <div className="mt-10 flex flex-col sm:flex-row gap-3 sm:items-center">
+              <button
+                data-testid="hero-cta-consultation"
+                onClick={() => scrollTo("#consultation")}
+                className="group inline-flex items-center justify-between gap-6 bg-[#F9F7F4] text-[#2C2420] hover:bg-[#C19A6B] hover:text-[#F9F7F4] transition-all duration-500 px-7 py-4 text-[11px] uppercase tracking-[0.28em]"
+              >
+                Book a Consultation
+                <ArrowUpRight size={16} className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+              </button>
+              <button
+                data-testid="hero-cta-ecosystem"
+                onClick={() => scrollTo("#how")}
+                className="group inline-flex items-center gap-3 text-[#F9F7F4] hover:text-[#C19A6B] px-2 py-4 text-[11px] uppercase tracking-[0.28em] transition-colors"
+              >
+                Explore Our Ecosystem
+                <span className="h-px w-8 bg-current transition-all group-hover:w-12" />
+              </button>
+            </div>
+          </motion.div>
+        </div>
+
+        {/* Bottom metric strip */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 0.8 }}
+          className="mt-20 pt-8 border-t border-[#F9F7F4]/15 grid grid-cols-2 md:grid-cols-4 gap-y-6 gap-x-8"
+        >
+          {[
+            ["Villas", "Designed & Operated"],
+            ["End-to-End", "Hospitality Ecosystem"],
+            ["Revenue-First", "Asset Optimization"],
+            ["Boutique", "Operations & Care"],
+          ].map(([k, v]) => (
+            <div key={k} className="flex flex-col gap-1">
+              <span className="font-serif text-2xl md:text-3xl text-[#F9F7F4] font-light">
+                {k}
+              </span>
+              <span className="text-[10px] tracking-[0.26em] uppercase text-[#F9F7F4]/60">
+                {v}
+              </span>
+            </div>
+          ))}
+        </motion.div>
+      </div>
+
+      {/* Scroll indicator */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.6, duration: 1 }}
+        className="absolute bottom-6 right-6 md:right-12 z-10 flex flex-col items-center gap-2 text-[#F9F7F4]/70"
+      >
+        <span className="text-[9px] tracking-[0.32em] uppercase rotate-90 origin-right translate-x-3">
+          Scroll
+        </span>
+        <ArrowDown size={14} className="animate-bounce" />
+      </motion.div>
+    </section>
+  );
+};
