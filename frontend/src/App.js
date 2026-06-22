@@ -13,7 +13,7 @@ import { Footer } from "@/components/site/Footer";
 
 const Home = () => {
   return (
-    <main data-testid="home-page" className="min-h-screen bg-[#F9F7F4] text-[#2C2420]">
+    <main data-testid="home-page" className="min-h-screen bg-[#F2F6FB] text-[#0F2A47]">
       <Navigation />
       <Hero />
       <HowItWorks />

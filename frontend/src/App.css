@@ -1,7 +1,7 @@
 /* App-specific styles for The Basic Ecosystem */
 .App {
     min-height: 100vh;
-    background-color: #F9F7F4;
+    background-color: #F2F6FB;
 }
 
 /* Subtle text reveal */
@@ -15,6 +15,6 @@
     font-weight: 300;
     font-size: clamp(6rem, 14vw, 12rem);
     line-height: 0.9;
-    color: #E5DFD5;
+    color: #D3E0EE;
     letter-spacing: -0.04em;
 }

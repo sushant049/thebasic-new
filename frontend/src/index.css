@@ -12,13 +12,13 @@ body {
     font-weight: 300;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: #F9F7F4;
-    color: #2C2420;
+    background-color: #F2F6FB;
+    color: #0F2A47;
 }
 
 ::selection {
-    background: #C19A6B;
-    color: #F9F7F4;
+    background: #F37C2C;
+    color: #F2F6FB;
 }
 
 .font-serif-display {
@@ -35,7 +35,7 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.28em;
     font-size: 0.75rem;
-    color: #8C7A6B;
+    color: #5A7BA0;
 }
 
 /* Subtle paper grain overlay */
@@ -51,25 +51,25 @@ body {
 
 @layer base {
     :root {
-        --background: 36 27% 96%;
-        --foreground: 22 18% 14%;
-        --card: 36 27% 96%;
-        --card-foreground: 22 18% 14%;
-        --popover: 36 27% 96%;
-        --popover-foreground: 22 18% 14%;
-        --primary: 22 19% 24%;
-        --primary-foreground: 36 27% 96%;
-        --secondary: 32 17% 92%;
-        --secondary-foreground: 22 19% 24%;
-        --muted: 32 17% 92%;
-        --muted-foreground: 22 10% 41%;
-        --accent: 31 38% 58%;
-        --accent-foreground: 36 27% 96%;
+        --background: 213 47% 97%;
+        --foreground: 211 64% 16%;
+        --card: 213 47% 97%;
+        --card-foreground: 211 64% 16%;
+        --popover: 213 47% 97%;
+        --popover-foreground: 211 64% 16%;
+        --primary: 213 51% 25%;
+        --primary-foreground: 213 47% 97%;
+        --secondary: 213 47% 93%;
+        --secondary-foreground: 213 51% 25%;
+        --muted: 213 47% 93%;
+        --muted-foreground: 208 17% 43%;
+        --accent: 22 89% 56%;
+        --accent-foreground: 213 47% 97%;
         --destructive: 0 62% 45%;
-        --destructive-foreground: 36 27% 96%;
-        --border: 33 19% 86%;
-        --input: 33 19% 86%;
-        --ring: 31 38% 58%;
+        --destructive-foreground: 213 47% 97%;
+        --border: 211 50% 88%;
+        --input: 211 50% 88%;
+        --ring: 22 89% 56%;
         --radius: 0;
     }
 }

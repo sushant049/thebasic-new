@@ -7,7 +7,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from ".
 import { toast } from "sonner";
 
 const inputClasses =
-  "h-12 w-full border-0 border-b border-[#8C7A6B]/50 rounded-none bg-transparent px-0 py-2 text-base text-[#2C2420] placeholder:text-[#8C7A6B]/70 focus-visible:ring-0 focus-visible:border-[#C19A6B] focus-visible:outline-none transition-colors font-light";
+  "h-12 w-full border-0 border-b border-[#5A7BA0]/50 rounded-none bg-transparent px-0 py-2 text-base text-[#0F2A47] placeholder:text-[#5A7BA0]/70 focus-visible:ring-0 focus-visible:border-[#F37C2C] focus-visible:outline-none transition-colors font-light";
 
 export const Consultation = () => {
   const [submitted, setSubmitted] = useState(false);
@@ -38,7 +38,7 @@ export const Consultation = () => {
     <section
       id="consultation"
       data-testid="consultation-section"
-      className="relative bg-[#F9F7F4] py-24 md:py-36"
+      className="relative bg-[#F2F6FB] py-24 md:py-36"
     >
       <div className="w-full max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-16">
         {/* Left column */}
@@ -50,40 +50,40 @@ export const Consultation = () => {
           className="md:col-span-5 md:sticky md:top-32 self-start"
         >
           <div className="flex items-center gap-3 mb-6">
-            <span className="h-px w-10 bg-[#C19A6B]" />
+            <span className="h-px w-10 bg-[#F37C2C]" />
             <span className="eyebrow">Book a Consultation</span>
           </div>
-          <h2 className="font-serif text-4xl md:text-5xl lg:text-[56px] font-light text-[#2C2420] leading-[1.05] tracking-tight">
+          <h2 className="font-serif text-4xl md:text-5xl lg:text-[56px] font-light text-[#0F2A47] leading-[1.05] tracking-tight">
             Have a property,
             <br />
-            <em className="not-italic text-[#C19A6B]">villa, building,</em>
+            <em className="not-italic text-[#F37C2C]">villa, building,</em>
             <br />
             or land?
           </h2>
-          <p className="mt-6 text-[#4A3B32]/85 font-light text-base md:text-lg leading-relaxed max-w-md">
+          <p className="mt-6 text-[#1F3A5F]/85 font-light text-base md:text-lg leading-relaxed max-w-md">
             Tell us about your asset. We&apos;ll come back with a yield-led
             assessment and a tailored path forward — design, operations, or
             both.{" "}
           </p>
 
-          <div className="mt-10 pt-8 border-t border-[#E5DFD5] space-y-4">
+          <div className="mt-10 pt-8 border-t border-[#D3E0EE] space-y-4">
             <div>
-              <div className="text-[10px] tracking-[0.28em] uppercase text-[#73655D] mb-1">
+              <div className="text-[10px] tracking-[0.28em] uppercase text-[#5A7080] mb-1">
                 Email
               </div>
               <a
                 href="mailto:hello@thebasicecosystem.com"
                 data-testid="contact-email"
-                className="font-serif text-xl text-[#2C2420] hover:text-[#C19A6B] transition-colors"
+                className="font-serif text-xl text-[#0F2A47] hover:text-[#F37C2C] transition-colors"
               >
                 hello@thebasicecosystem.com
               </a>
             </div>
             <div>
-              <div className="text-[10px] tracking-[0.28em] uppercase text-[#73655D] mb-1">
+              <div className="text-[10px] tracking-[0.28em] uppercase text-[#5A7080] mb-1">
                 Response time
               </div>
-              <p className="font-serif text-xl text-[#2C2420]">Within 24 hours</p>
+              <p className="font-serif text-xl text-[#0F2A47]">Within 24 hours</p>
             </div>
           </div>
         </motion.div>
@@ -99,22 +99,22 @@ export const Consultation = () => {
           {submitted ? (
             <div
               data-testid="consultation-success"
-              className="bg-[#F2EFE9] border border-[#E5DFD5] p-10 md:p-14 flex flex-col items-start"
+              className="bg-[#E6EEF7] border border-[#D3E0EE] p-10 md:p-14 flex flex-col items-start"
             >
-              <div className="w-12 h-12 rounded-full bg-[#C19A6B]/15 border border-[#C19A6B]/30 flex items-center justify-center">
-                <Check className="text-[#C19A6B]" strokeWidth={1.5} />
+              <div className="w-12 h-12 rounded-full bg-[#F37C2C]/15 border border-[#F37C2C]/30 flex items-center justify-center">
+                <Check className="text-[#F37C2C]" strokeWidth={1.5} />
               </div>
-              <h3 className="font-serif text-3xl md:text-4xl font-light text-[#2C2420] mt-6">
+              <h3 className="font-serif text-3xl md:text-4xl font-light text-[#0F2A47] mt-6">
                 Thank you, {form.name.split(" ")[0] || "there"}.
               </h3>
-              <p className="mt-4 text-[#4A3B32]/85 font-light leading-relaxed max-w-md">
+              <p className="mt-4 text-[#1F3A5F]/85 font-light leading-relaxed max-w-md">
                 Your enquiry has been received. A member of our team will reach
                 out within 24 hours to schedule a consultation.
               </p>
               <button
                 data-testid="consultation-reset"
                 onClick={() => { setSubmitted(false); setForm({ name: "", email: "", phone: "", propertyType: "", message: "" }); }}
-                className="mt-10 text-[11px] uppercase tracking-[0.28em] text-[#4A3B32] hover:text-[#C19A6B] transition-colors"
+                className="mt-10 text-[11px] uppercase tracking-[0.28em] text-[#1F3A5F] hover:text-[#F37C2C] transition-colors"
               >
                 Submit Another Enquiry
               </button>
@@ -127,7 +127,7 @@ export const Consultation = () => {
             >
               <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-8">
                 <div>
-                  <label className="text-[10px] tracking-[0.28em] uppercase text-[#73655D] mb-2 block">
+                  <label className="text-[10px] tracking-[0.28em] uppercase text-[#5A7080] mb-2 block">
                     Full Name *
                   </label>
                   <Input
@@ -140,7 +140,7 @@ export const Consultation = () => {
                   />
                 </div>
                 <div>
-                  <label className="text-[10px] tracking-[0.28em] uppercase text-[#73655D] mb-2 block">
+                  <label className="text-[10px] tracking-[0.28em] uppercase text-[#5A7080] mb-2 block">
                     Email *
                   </label>
                   <Input
@@ -154,7 +154,7 @@ export const Consultation = () => {
                   />
                 </div>
                 <div>
-                  <label className="text-[10px] tracking-[0.28em] uppercase text-[#73655D] mb-2 block">
+                  <label className="text-[10px] tracking-[0.28em] uppercase text-[#5A7080] mb-2 block">
                     Phone
                   </label>
                   <Input
@@ -167,7 +167,7 @@ export const Consultation = () => {
                   />
                 </div>
                 <div>
-                  <label className="text-[10px] tracking-[0.28em] uppercase text-[#73655D] mb-2 block">
+                  <label className="text-[10px] tracking-[0.28em] uppercase text-[#5A7080] mb-2 block">
                     Property Type *
                   </label>
                   <Select
@@ -176,11 +176,11 @@ export const Consultation = () => {
                   >
                     <SelectTrigger
                       data-testid="form-property-type"
-                      className="h-12 w-full border-0 border-b border-[#8C7A6B]/50 rounded-none bg-transparent px-0 text-base text-[#2C2420] focus:ring-0 focus:border-[#C19A6B]"
+                      className="h-12 w-full border-0 border-b border-[#5A7BA0]/50 rounded-none bg-transparent px-0 text-base text-[#0F2A47] focus:ring-0 focus:border-[#F37C2C]"
                     >
                       <SelectValue placeholder="Select an option" />
                     </SelectTrigger>
-                    <SelectContent className="bg-[#F9F7F4] border border-[#E5DFD5]">
+                    <SelectContent className="bg-[#F2F6FB] border border-[#D3E0EE]">
                       <SelectItem value="villa">Villa</SelectItem>
                       <SelectItem value="apartment">Apartment / Home</SelectItem>
                       <SelectItem value="building">Apartment Building</SelectItem>
@@ -192,7 +192,7 @@ export const Consultation = () => {
               </div>
 
               <div>
-                <label className="text-[10px] tracking-[0.28em] uppercase text-[#73655D] mb-2 block">
+                <label className="text-[10px] tracking-[0.28em] uppercase text-[#5A7080] mb-2 block">
                   Tell us about your property
                 </label>
                 <Textarea
@@ -201,7 +201,7 @@ export const Consultation = () => {
                   onChange={handleChange("message")}
                   placeholder="Location, size, current status, and what you're hoping to achieve..."
                   rows={4}
-                  className="w-full border-0 border-b border-[#8C7A6B]/50 rounded-none bg-transparent px-0 py-3 text-base text-[#2C2420] placeholder:text-[#8C7A6B]/70 focus-visible:ring-0 focus-visible:border-[#C19A6B] focus-visible:outline-none transition-colors font-light resize-none"
+                  className="w-full border-0 border-b border-[#5A7BA0]/50 rounded-none bg-transparent px-0 py-3 text-base text-[#0F2A47] placeholder:text-[#5A7BA0]/70 focus-visible:ring-0 focus-visible:border-[#F37C2C] focus-visible:outline-none transition-colors font-light resize-none"
                 />
               </div>
 
@@ -209,12 +209,12 @@ export const Consultation = () => {
                 <button
                   type="submit"
                   data-testid="consultation-form-submit"
-                  className="group inline-flex items-center justify-between gap-8 bg-[#2C2420] text-[#F9F7F4] hover:bg-[#C19A6B] transition-all duration-500 px-8 py-4 text-[11px] uppercase tracking-[0.28em]"
+                  className="group inline-flex items-center justify-between gap-8 bg-[#0F2A47] text-[#F2F6FB] hover:bg-[#F37C2C] transition-all duration-500 px-8 py-4 text-[11px] uppercase tracking-[0.28em]"
                 >
                   Send Enquiry
                   <Send size={14} className="transition-transform group-hover:translate-x-1" />
                 </button>
-                <p className="mt-5 text-xs text-[#73655D] font-light">
+                <p className="mt-5 text-xs text-[#5A7080] font-light">
                   By submitting, you agree to be contacted by The Basic Ecosystem regarding your property.
                 </p>
               </div>

@@ -26,7 +26,7 @@ export const Results = () => {
           className="w-full h-full object-cover"
           loading="lazy"
         />
-        <div className="absolute inset-0 bg-[#2C2420]/82" />
+        <div className="absolute inset-0 bg-[#0F2A47]/85" />
       </div>
 
       <div className="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-12">
@@ -39,12 +39,12 @@ export const Results = () => {
             className="md:col-span-8"
           >
             <div className="flex items-center gap-3 mb-6">
-              <span className="h-px w-10 bg-[#C19A6B]" />
-              <span className="text-[10px] tracking-[0.32em] uppercase text-[#C19A6B]">
+              <span className="h-px w-10 bg-[#F37C2C]" />
+              <span className="text-[10px] tracking-[0.32em] uppercase text-[#F37C2C]">
                 Results We Deliver
               </span>
             </div>
-            <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl font-light text-[#F9F7F4] leading-[1.05] tracking-tight">
+            <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl font-light text-[#F2F6FB] leading-[1.05] tracking-tight">
               Outcomes that compound — across every quarter of ownership.
             </h2>
           </motion.div>
@@ -61,13 +61,13 @@ export const Results = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.8, delay: i * 0.08 }}
-                className="group backdrop-blur-xl bg-[#F9F7F4]/8 border border-[#F9F7F4]/15 p-7 md:p-8 hover:bg-[#F9F7F4]/14 hover:border-[#C19A6B]/40 transition-all duration-500"
+                className="group backdrop-blur-xl bg-[#F2F6FB]/8 border border-[#F2F6FB]/15 p-7 md:p-8 hover:bg-[#F2F6FB]/14 hover:border-[#F37C2C]/40 transition-all duration-500"
               >
-                <Icon strokeWidth={1.2} className="w-7 h-7 text-[#C19A6B] mb-10" />
-                <div className="font-serif text-3xl md:text-[34px] text-[#F9F7F4] font-light leading-tight">
+                <Icon strokeWidth={1.2} className="w-7 h-7 text-[#F37C2C] mb-10" />
+                <div className="font-serif text-3xl md:text-[34px] text-[#F2F6FB] font-light leading-tight">
                   {r.kpi}
                 </div>
-                <div className="mt-2 text-[11px] tracking-[0.26em] uppercase text-[#F9F7F4]/70">
+                <div className="mt-2 text-[11px] tracking-[0.26em] uppercase text-[#F2F6FB]/70">
                   {r.label}
                 </div>
               </motion.div>
@@ -80,12 +80,12 @@ export const Results = () => {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 1, delay: 0.4 }}
-          className="mt-20 pt-10 border-t border-[#F9F7F4]/15 grid grid-cols-1 md:grid-cols-2 gap-8 items-center"
+          className="mt-20 pt-10 border-t border-[#F2F6FB]/15 grid grid-cols-1 md:grid-cols-2 gap-8 items-center"
         >
-          <p className="font-serif italic text-2xl md:text-3xl text-[#F9F7F4]/90 leading-snug max-w-xl">
-            &ldquo;We don&apos;t promise listings. We promise <span className="text-[#C19A6B]">a P&amp;L statement</span> you&apos;d be proud to underwrite.&rdquo;
+          <p className="font-serif italic text-2xl md:text-3xl text-[#F2F6FB]/90 leading-snug max-w-xl">
+            &ldquo;We don&apos;t promise listings. We promise <span className="text-[#F37C2C]">a P&amp;L statement</span> you&apos;d be proud to underwrite.&rdquo;
           </p>
-          <p className="text-[#F9F7F4]/60 font-light text-sm md:text-base md:text-right">
+          <p className="text-[#F2F6FB]/60 font-light text-sm md:text-base md:text-right">
             Performance metrics tracked monthly. Owner reviews quarterly. Yield
             strategy revisited every cycle.
           </p>

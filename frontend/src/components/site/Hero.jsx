@@ -24,7 +24,7 @@ export const Hero = () => {
           className="w-full h-full object-cover"
           loading="eager"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#2C2420]/70 via-[#2C2420]/30 to-[#2C2420]/85" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0F2A47]/70 via-[#0F2A47]/30 to-[#0F2A47]/85" />
       </div>
 
       {/* Top eyebrow */}
@@ -36,8 +36,8 @@ export const Hero = () => {
             transition={{ duration: 1, delay: 0.4 }}
             className="flex items-center gap-3"
           >
-            <span className="h-px w-10 bg-[#C19A6B]" />
-            <span className="text-[10px] tracking-[0.32em] uppercase text-[#C19A6B]">
+            <span className="h-px w-10 bg-[#F37C2C]" />
+            <span className="text-[10px] tracking-[0.32em] uppercase text-[#F37C2C]">
               Hospitality Asset Ecosystem
             </span>
           </motion.div>
@@ -55,10 +55,10 @@ export const Hero = () => {
           >
             <h1
               data-testid="hero-headline"
-              className="font-serif font-light text-[#F9F7F4] text-5xl sm:text-6xl md:text-7xl lg:text-[88px] leading-[0.98] tracking-tight"
+              className="font-serif font-light text-[#F2F6FB] text-5xl sm:text-6xl md:text-7xl lg:text-[88px] leading-[0.98] tracking-tight"
             >
               Transforming properties into{" "}
-              <em className="not-italic font-normal text-[#E0C9A6]">
+              <em className="not-italic font-normal text-[#FFB37A]">
                 profitable hospitality
               </em>{" "}
               assets.
@@ -69,11 +69,11 @@ export const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, delay: 0.35 }}
-            className="md:col-span-4 md:pl-6 md:border-l md:border-[#F9F7F4]/20"
+            className="md:col-span-4 md:pl-6 md:border-l md:border-[#F2F6FB]/20"
           >
             <p
               data-testid="hero-subheadline"
-              className="text-[#F9F7F4]/85 font-light text-base md:text-[17px] leading-relaxed"
+              className="text-[#F2F6FB]/85 font-light text-base md:text-[17px] leading-relaxed"
             >
               We design, develop, and professionally operate hospitality assets
               that deliver higher occupancy and sustainable returns — for
@@ -84,7 +84,7 @@ export const Hero = () => {
               <button
                 data-testid="hero-cta-consultation"
                 onClick={() => scrollTo("#consultation")}
-                className="group inline-flex items-center justify-between gap-6 bg-[#F9F7F4] text-[#2C2420] hover:bg-[#C19A6B] hover:text-[#F9F7F4] transition-all duration-500 px-7 py-4 text-[11px] uppercase tracking-[0.28em]"
+                className="group inline-flex items-center justify-between gap-6 bg-[#F2F6FB] text-[#0F2A47] hover:bg-[#F37C2C] hover:text-[#F2F6FB] transition-all duration-500 px-7 py-4 text-[11px] uppercase tracking-[0.28em]"
               >
                 Book a Consultation
                 <ArrowUpRight size={16} className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
@@ -92,7 +92,7 @@ export const Hero = () => {
               <button
                 data-testid="hero-cta-ecosystem"
                 onClick={() => scrollTo("#how")}
-                className="group inline-flex items-center gap-3 text-[#F9F7F4] hover:text-[#C19A6B] px-2 py-4 text-[11px] uppercase tracking-[0.28em] transition-colors"
+                className="group inline-flex items-center gap-3 text-[#F2F6FB] hover:text-[#F37C2C] px-2 py-4 text-[11px] uppercase tracking-[0.28em] transition-colors"
               >
                 Explore Our Ecosystem
                 <span className="h-px w-8 bg-current transition-all group-hover:w-12" />
@@ -106,7 +106,7 @@ export const Hero = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.8 }}
-          className="mt-20 pt-8 border-t border-[#F9F7F4]/15 grid grid-cols-2 md:grid-cols-4 gap-y-6 gap-x-8"
+          className="mt-20 pt-8 border-t border-[#F2F6FB]/15 grid grid-cols-2 md:grid-cols-4 gap-y-6 gap-x-8"
         >
           {[
             ["Villas", "Designed & Operated"],
@@ -115,10 +115,10 @@ export const Hero = () => {
             ["Boutique", "Operations & Care"],
           ].map(([k, v]) => (
             <div key={k} className="flex flex-col gap-1">
-              <span className="font-serif text-2xl md:text-3xl text-[#F9F7F4] font-light">
+              <span className="font-serif text-2xl md:text-3xl text-[#F2F6FB] font-light">
                 {k}
               </span>
-              <span className="text-[10px] tracking-[0.26em] uppercase text-[#F9F7F4]/60">
+              <span className="text-[10px] tracking-[0.26em] uppercase text-[#F2F6FB]/60">
                 {v}
               </span>
             </div>
@@ -131,7 +131,7 @@ export const Hero = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.6, duration: 1 }}
-        className="absolute bottom-6 right-6 md:right-12 z-10 flex flex-col items-center gap-2 text-[#F9F7F4]/70"
+        className="absolute bottom-6 right-6 md:right-12 z-10 flex flex-col items-center gap-2 text-[#F2F6FB]/70"
       >
         <span className="text-[9px] tracking-[0.32em] uppercase rotate-90 origin-right translate-x-3">
           Scroll
