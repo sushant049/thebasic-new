@@ -29,8 +29,8 @@ export const Navigation = () => {
     <header
       data-testid="site-nav"
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 ${
-        scrolled
-          ? "backdrop-blur-xl bg-[#F2F6FB]/85 border-b border-[#D3E0EE]/70 py-3"
+        scrolled || open
+          ? "backdrop-blur-xl bg-[#F2F6FB]/95 border-b border-[#D3E0EE]/70 py-3"
           : "bg-transparent py-6"
       }`}
     >
@@ -42,14 +42,14 @@ export const Navigation = () => {
         >
           <span
             className={`font-serif text-2xl md:text-[26px] font-light tracking-tight ${
-              scrolled ? "text-[#0F2A47]" : "text-[#F2F6FB]"
+              scrolled || open ? "text-[#0F2A47]" : "text-[#F2F6FB]"
             } transition-colors`}
           >
             The Basic
           </span>
           <span
             className={`text-[10px] uppercase tracking-[0.3em] ${
-              scrolled ? "text-[#5A7BA0]" : "text-[#F37C2C]"
+              scrolled || open ? "text-[#5A7BA0]" : "text-[#F37C2C]"
             } transition-colors`}
           >
             Ecosystem
@@ -85,7 +85,7 @@ export const Navigation = () => {
         <button
           data-testid="mobile-menu-toggle"
           onClick={() => setOpen((v) => !v)}
-          className={`md:hidden p-2 ${scrolled ? "text-[#0F2A47]" : "text-[#F2F6FB]"}`}
+          className={`md:hidden p-2 ${scrolled || open ? "text-[#0F2A47]" : "text-[#F2F6FB]"}`}
         >
           {open ? <X size={22} /> : <Menu size={22} />}
         </button>
@@ -103,7 +103,7 @@ export const Navigation = () => {
               {links.map((l) => (
                 <button
                   key={l.href}
-                  data-testid={`mobile-nav-link-${l.label.toLowerCase()}`}
+                  data-testid={`mobile-nav-link-${l.label.toLowerCase().replace(/\s/g, "-")}`}
                   onClick={() => scrollTo(l.href)}
                   className="text-left text-[13px] uppercase tracking-[0.2em] text-[#1F3A5F]"
                 >
