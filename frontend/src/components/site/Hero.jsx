@@ -38,7 +38,7 @@ export const Hero = () => {
           >
             <span className="h-px w-10 bg-[#F37C2C]" />
             <span className="text-[10px] tracking-[0.32em] uppercase text-[#F37C2C]">
-              Hospitality Asset Ecosystem
+              Studio &amp; Asset Management
             </span>
           </motion.div>
         </div>
@@ -57,11 +57,10 @@ export const Hero = () => {
               data-testid="hero-headline"
               className="font-serif font-light text-[#F2F6FB] text-5xl sm:text-6xl md:text-7xl lg:text-[88px] leading-[0.98] tracking-tight"
             >
-              Transforming properties into{" "}
+              We turn properties into{" "}
               <em className="not-italic font-normal text-[#FFB37A]">
-                profitable hospitality
-              </em>{" "}
-              assets.
+                profitable assets.
+              </em>
             </h1>
           </motion.div>
 
@@ -75,26 +74,26 @@ export const Hero = () => {
               data-testid="hero-subheadline"
               className="text-[#F2F6FB]/85 font-light text-base md:text-[17px] leading-relaxed"
             >
-              We design, develop, and professionally operate hospitality assets
-              that deliver higher occupancy and sustainable returns — for
-              owners who think like investors.
+              From land and villas to apartment buildings and commercial
+              properties — we identify the highest-return use of your asset
+              and help bring it to life.
             </p>
 
             <div className="mt-10 flex flex-col sm:flex-row gap-3 sm:items-center">
               <button
                 data-testid="hero-cta-consultation"
                 onClick={() => scrollTo("#consultation")}
-                className="group inline-flex items-center justify-between gap-6 bg-[#F2F6FB] text-[#0F2A47] hover:bg-[#F37C2C] hover:text-[#F2F6FB] transition-all duration-500 px-7 py-4 text-[11px] uppercase tracking-[0.28em]"
+                className="group inline-flex items-center justify-between gap-6 bg-[#F37C2C] text-[#F2F6FB] hover:bg-[#F2F6FB] hover:text-[#0F2A47] transition-all duration-500 px-7 py-4 text-[11px] uppercase tracking-[0.28em]"
               >
                 Book a Consultation
                 <ArrowUpRight size={16} className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
               </button>
               <button
                 data-testid="hero-cta-ecosystem"
-                onClick={() => scrollTo("#how")}
+                onClick={() => scrollTo("#services")}
                 className="group inline-flex items-center gap-3 text-[#F2F6FB] hover:text-[#F37C2C] px-2 py-4 text-[11px] uppercase tracking-[0.28em] transition-colors"
               >
-                Explore Our Ecosystem
+                Explore Our Services
                 <span className="h-px w-8 bg-current transition-all group-hover:w-12" />
               </button>
             </div>
@@ -109,16 +108,16 @@ export const Hero = () => {
           className="mt-20 pt-8 border-t border-[#F2F6FB]/15 grid grid-cols-2 md:grid-cols-4 gap-y-6 gap-x-8"
         >
           {[
-            ["Villas", "Designed & Operated"],
-            ["End-to-End", "Hospitality Ecosystem"],
-            ["Revenue-First", "Asset Optimization"],
-            ["Boutique", "Operations & Care"],
+            ["50+", "Projects Advised & Managed"],
+            ["250+", "Hospitality Keys Operated"],
+            ["₹250Cr+", "Asset Value Created"],
+            ["95%+", "Average Occupancy Achieved"],
           ].map(([k, v]) => (
             <div key={k} className="flex flex-col gap-1">
-              <span className="font-serif text-2xl md:text-3xl text-[#F2F6FB] font-light">
+              <span className="font-serif text-3xl md:text-4xl text-[#FFB37A] font-light tracking-tight">
                 {k}
               </span>
-              <span className="text-[10px] tracking-[0.26em] uppercase text-[#F2F6FB]/60">
+              <span className="text-[10px] tracking-[0.26em] uppercase text-[#F2F6FB]/70 leading-snug">
                 {v}
               </span>
             </div>

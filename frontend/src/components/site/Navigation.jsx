@@ -3,10 +3,11 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 
 const links = [
+  { label: "Services", href: "#services" },
+  { label: "Ecosystem", href: "#ecosystem" },
   { label: "Studio", href: "#studio" },
   { label: "Operate", href: "#operate" },
   { label: "Why Us", href: "#why" },
-  { label: "Results", href: "#results" },
 ];
 
 export const Navigation = () => {
@@ -41,18 +42,18 @@ export const Navigation = () => {
           className="flex items-baseline gap-2 group"
         >
           <span
-            className={`font-serif text-2xl md:text-[26px] font-light tracking-tight ${
+            className={`font-serif text-2xl md:text-[26px] font-light tracking-[0.06em] uppercase ${
               scrolled || open ? "text-[#0F2A47]" : "text-[#F2F6FB]"
             } transition-colors`}
           >
             The Basic
           </span>
           <span
-            className={`text-[10px] uppercase tracking-[0.3em] ${
+            className={`hidden sm:inline text-[9px] uppercase tracking-[0.28em] ${
               scrolled || open ? "text-[#5A7BA0]" : "text-[#F37C2C]"
             } transition-colors`}
           >
-            Ecosystem
+            Studio &amp; Asset Mgmt
           </span>
         </button>
 
