@@ -50,20 +50,20 @@ export const Navigation = () => {
           </span>
           <span
             className={`hidden sm:inline text-[9px] uppercase tracking-[0.28em] ${
-              scrolled || open ? "text-[#5A7BA0]" : "text-[#F37C2C]"
+              scrolled || open ? "text-[#5A7BA0]" : "text-[#C0561D]"
             } transition-colors`}
           >
             Studio &amp; Asset Mgmt
           </span>
         </button>
 
-        <nav className="hidden md:flex items-center gap-10">
+        <nav className="hidden lg:flex items-center gap-10">
           {links.map((l) => (
             <button
               key={l.href}
               data-testid={`nav-link-${l.label.toLowerCase().replace(/\s/g, "-")}`}
               onClick={() => scrollTo(l.href)}
-              className={`text-[12px] uppercase tracking-[0.22em] font-light hover:text-[#F37C2C] transition-colors ${
+              className={`text-[12px] uppercase tracking-[0.22em] font-light hover:text-[#C0561D] transition-colors ${
                 scrolled ? "text-[#1F3A5F]" : "text-[#F2F6FB]/90"
               }`}
             >
@@ -86,7 +86,7 @@ export const Navigation = () => {
         <button
           data-testid="mobile-menu-toggle"
           onClick={() => setOpen((v) => !v)}
-          className={`md:hidden p-2 ${scrolled || open ? "text-[#0F2A47]" : "text-[#F2F6FB]"}`}
+          className={`lg:hidden p-2 ${scrolled || open ? "text-[#0F2A47]" : "text-[#F2F6FB]"}`}
         >
           {open ? <X size={22} /> : <Menu size={22} />}
         </button>
@@ -98,7 +98,7 @@ export const Navigation = () => {
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
-            className="md:hidden bg-[#F2F6FB] border-t border-[#D3E0EE]"
+            className="lg:hidden bg-[#F2F6FB] border-t border-[#D3E0EE]"
           >
             <div className="px-6 py-6 flex flex-col gap-5">
               {links.map((l) => (

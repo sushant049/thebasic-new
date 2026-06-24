@@ -55,7 +55,7 @@ module.exports = {
           surface: '#E6EEF7',
           primary: '#1F3A5F',
           secondary: '#5A7BA0',
-          accent: '#F37C2C',
+          accent: '#C0561D',
           ink: '#0F2A47',
           muted: '#5A7080',
           border: '#D3E0EE',

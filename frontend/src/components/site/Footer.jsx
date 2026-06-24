@@ -13,7 +13,7 @@ export const Footer = () => {
               <span className="font-serif text-3xl font-light tracking-tight">
                 The Basic
               </span>
-              <span className="text-[10px] uppercase tracking-[0.32em] text-[#F37C2C]">
+              <span className="text-[10px] uppercase tracking-[0.32em] text-[#C0561D]">
                 Ecosystem
               </span>
             </div>
@@ -25,7 +25,7 @@ export const Footer = () => {
               <a
                 href="mailto:connect@thebasic.co.in"
                 data-testid="footer-email"
-                className="w-10 h-10 border border-[#F2F6FB]/20 hover:border-[#F37C2C] flex items-center justify-center transition-colors"
+                className="w-10 h-10 border border-[#F2F6FB]/20 hover:border-[#C0561D] flex items-center justify-center transition-colors"
                 aria-label="Email"
               >
                 <Mail size={16} strokeWidth={1.2} />
@@ -35,7 +35,7 @@ export const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 data-testid="footer-instagram"
-                className="w-10 h-10 border border-[#F2F6FB]/20 hover:border-[#F37C2C] flex items-center justify-center transition-colors"
+                className="w-10 h-10 border border-[#F2F6FB]/20 hover:border-[#C0561D] flex items-center justify-center transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram size={16} strokeWidth={1.2} />
@@ -45,7 +45,7 @@ export const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 data-testid="footer-linkedin"
-                className="w-10 h-10 border border-[#F2F6FB]/20 hover:border-[#F37C2C] flex items-center justify-center transition-colors"
+                className="w-10 h-10 border border-[#F2F6FB]/20 hover:border-[#C0561D] flex items-center justify-center transition-colors"
                 aria-label="LinkedIn"
               >
                 <Linkedin size={16} strokeWidth={1.2} />
@@ -54,7 +54,7 @@ export const Footer = () => {
           </div>
 
           <div className="md:col-span-3 md:col-start-7">
-            <div className="text-[10px] tracking-[0.28em] uppercase text-[#F37C2C] mb-5">
+            <div className="text-[10px] tracking-[0.28em] uppercase text-[#C0561D] mb-5">
               Ecosystem
             </div>
             <ul className="space-y-3 text-sm font-light">
@@ -82,7 +82,7 @@ export const Footer = () => {
           </div>
 
           <div className="md:col-span-3">
-            <div className="text-[10px] tracking-[0.28em] uppercase text-[#F37C2C] mb-5">
+            <div className="text-[10px] tracking-[0.28em] uppercase text-[#C0561D] mb-5">
               Contact
             </div>
             <ul className="space-y-3 text-sm font-light text-[#F2F6FB]/75">
@@ -90,7 +90,7 @@ export const Footer = () => {
               <li>+91 72050 00123</li>
               <li>Bengaluru · Mumbai · Goa</li>
               <li>
-                <a href="#consultation" className="underline-offset-4 hover:text-[#F37C2C] hover:underline transition-colors">
+                <a href="#consultation" className="underline-offset-4 hover:text-[#C0561D] hover:underline transition-colors">
                   Book a Consultation
                 </a>
               </li>

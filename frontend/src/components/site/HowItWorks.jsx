@@ -45,14 +45,14 @@ const Step = ({ idx, eyebrow, title, tagline, body, points, image, reverse, id }
       <h3 className="mt-4 font-serif text-4xl md:text-5xl font-light leading-[1.05] text-[#0F2A47]">
         {title}
       </h3>
-      <p className="mt-3 font-serif italic text-xl text-[#F37C2C]">{tagline}</p>
+      <p className="mt-3 font-serif italic text-xl text-[#C0561D]">{tagline}</p>
       <p className="mt-6 text-[#1F3A5F] font-light leading-relaxed text-[15px] md:text-base">
         {body}
       </p>
       <ul className="mt-8 space-y-3">
         {points.map((p) => (
           <li key={p} className="flex items-start gap-3 text-[14px] text-[#1F3A5F]">
-            <span className="mt-2 h-px w-6 bg-[#F37C2C] shrink-0" />
+            <span className="mt-2 h-px w-6 bg-[#C0561D] shrink-0" />
             <span className="font-light">{p}</span>
           </li>
         ))}
@@ -77,7 +77,7 @@ export const HowItWorks = () => {
           className="max-w-3xl mb-20 md:mb-28"
         >
           <div className="flex items-center gap-3 mb-6">
-            <span className="h-px w-10 bg-[#F37C2C]" />
+            <span className="h-px w-10 bg-[#C0561D]" />
             <span className="eyebrow">The Ecosystem</span>
           </div>
           <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl font-light text-[#0F2A47] leading-[1.05] tracking-tight text-balance">
@@ -132,12 +132,12 @@ export const HowItWorks = () => {
           className="mt-24 md:mt-32 pt-10 border-t border-[#D3E0EE] flex flex-col md:flex-row items-start md:items-center justify-between gap-6"
         >
           <p className="font-serif italic text-2xl md:text-3xl text-[#0F2A47] max-w-xl leading-snug">
-            &ldquo;Design and operations, owned by one team — accountable to one number: <span className="text-[#F37C2C]">your yield.</span>&rdquo;
+            &ldquo;Design and operations, owned by one team — accountable to one number: <span className="text-[#C0561D]">your yield.</span>&rdquo;
           </p>
           <button
             data-testid="how-cta-consultation"
             onClick={() => document.querySelector("#consultation")?.scrollIntoView({ behavior: "smooth" })}
-            className="group inline-flex items-center gap-3 text-[#1F3A5F] hover:text-[#F37C2C] text-[11px] uppercase tracking-[0.28em] transition-colors"
+            className="group inline-flex items-center gap-3 text-[#1F3A5F] hover:text-[#C0561D] text-[11px] uppercase tracking-[0.28em] transition-colors"
           >
             Start the Conversation
             <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />

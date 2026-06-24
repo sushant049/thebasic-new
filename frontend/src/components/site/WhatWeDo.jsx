@@ -75,9 +75,9 @@ export const WhatWeDo = () => {
           className="text-center max-w-3xl mx-auto mb-20"
         >
           <div className="flex items-center justify-center gap-3 mb-6">
-            <span className="h-px w-10 bg-[#F37C2C]" />
+            <span className="h-px w-10 bg-[#C0561D]" />
             <span className="eyebrow">What We Do</span>
-            <span className="h-px w-10 bg-[#F37C2C]" />
+            <span className="h-px w-10 bg-[#C0561D]" />
           </div>
           <h2 className="font-serif text-4xl md:text-5xl lg:text-[56px] font-light text-[#0F2A47] leading-[1.05] tracking-tight">
             End-to-end advisory, development and operations partner for real estate assets.
@@ -98,7 +98,7 @@ export const WhatWeDo = () => {
                 className="group bg-[#F2F6FB] hover:bg-white p-8 transition-colors duration-500 flex flex-col"
               >
                 <div className="flex items-center justify-between mb-10">
-                  <Icon strokeWidth={1.2} className="w-8 h-8 text-[#F37C2C]" />
+                  <Icon strokeWidth={1.2} className="w-8 h-8 text-[#C0561D]" />
                   <span className="text-[10px] tracking-[0.28em] uppercase text-[#5A7080]">
                     0{i + 1}
                   </span>
@@ -112,7 +112,7 @@ export const WhatWeDo = () => {
                 <ul className="mt-6 pt-5 border-t border-[#D3E0EE] space-y-2 text-[12px] text-[#1F3A5F]/85 font-light">
                   {s.items.map((it) => (
                     <li key={it} className="flex items-start gap-2">
-                      <span className="mt-[7px] h-[5px] w-[5px] rounded-full bg-[#F37C2C] shrink-0" />
+                      <span className="mt-[7px] h-[5px] w-[5px] rounded-full bg-[#C0561D] shrink-0" />
                       <span>{it}</span>
                     </li>
                   ))}

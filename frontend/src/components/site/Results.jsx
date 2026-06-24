@@ -39,8 +39,8 @@ export const Results = () => {
             className="md:col-span-8"
           >
             <div className="flex items-center gap-3 mb-6">
-              <span className="h-px w-10 bg-[#F37C2C]" />
-              <span className="text-[10px] tracking-[0.32em] uppercase text-[#F37C2C]">
+              <span className="h-px w-10 bg-[#C0561D]" />
+              <span className="text-[10px] tracking-[0.32em] uppercase text-[#C0561D]">
                 Results We Deliver
               </span>
             </div>
@@ -61,9 +61,9 @@ export const Results = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.8, delay: i * 0.08 }}
-                className="group backdrop-blur-xl bg-[#F2F6FB]/8 border border-[#F2F6FB]/15 p-7 md:p-8 hover:bg-[#F2F6FB]/14 hover:border-[#F37C2C]/40 transition-all duration-500"
+                className="group backdrop-blur-xl bg-[#F2F6FB]/8 border border-[#F2F6FB]/15 p-7 md:p-8 hover:bg-[#F2F6FB]/14 hover:border-[#C0561D]/40 transition-all duration-500"
               >
-                <Icon strokeWidth={1.2} className="w-7 h-7 text-[#F37C2C] mb-10" />
+                <Icon strokeWidth={1.2} className="w-7 h-7 text-[#C0561D] mb-10" />
                 <div className="font-serif text-3xl md:text-[34px] text-[#F2F6FB] font-light leading-tight">
                   {r.kpi}
                 </div>
@@ -83,7 +83,7 @@ export const Results = () => {
           className="mt-20 pt-10 border-t border-[#F2F6FB]/15 grid grid-cols-1 md:grid-cols-2 gap-8 items-center"
         >
           <p className="font-serif italic text-2xl md:text-3xl text-[#F2F6FB]/90 leading-snug max-w-xl">
-            &ldquo;We don&apos;t promise listings. We promise <span className="text-[#F37C2C]">a P&amp;L statement</span> you&apos;d be proud to underwrite.&rdquo;
+            &ldquo;We don&apos;t promise listings. We promise <span className="text-[#C0561D]">a P&amp;L statement</span> you&apos;d be proud to underwrite.&rdquo;
           </p>
           <p className="text-[#F2F6FB]/60 font-light text-sm md:text-base md:text-right">
             Performance metrics tracked monthly. Owner reviews quarterly. Yield

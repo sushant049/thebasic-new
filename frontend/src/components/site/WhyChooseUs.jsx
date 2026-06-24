@@ -41,7 +41,7 @@ export const WhyChooseUs = () => {
       data-testid="why-section"
       className="relative bg-[#0F2A47] py-24 md:py-32 overflow-hidden"
     >
-      <div className="absolute -top-32 -right-24 w-[500px] h-[500px] rounded-full bg-[#F37C2C]/12 blur-3xl" />
+      <div className="absolute -top-32 -right-24 w-[500px] h-[500px] rounded-full bg-[#C0561D]/12 blur-3xl" />
       <div className="relative w-full max-w-7xl mx-auto px-6 md:px-12">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -51,15 +51,15 @@ export const WhyChooseUs = () => {
           className="text-center max-w-3xl mx-auto mb-16 md:mb-20"
         >
           <div className="flex items-center justify-center gap-3 mb-6">
-            <span className="h-px w-10 bg-[#F37C2C]" />
-            <span className="text-[10px] tracking-[0.32em] uppercase text-[#F37C2C]">
+            <span className="h-px w-10 bg-[#C0561D]" />
+            <span className="text-[10px] tracking-[0.32em] uppercase text-[#C0561D]">
               Why The Basic Ecosystem
             </span>
-            <span className="h-px w-10 bg-[#F37C2C]" />
+            <span className="h-px w-10 bg-[#C0561D]" />
           </div>
           <h2 className="font-serif text-4xl md:text-5xl lg:text-[56px] font-light text-[#F2F6FB] leading-[1.05] tracking-tight">
             A six-step approach — from{" "}
-            <em className="not-italic text-[#FFB37A]">first thought</em> to
+            <em className="not-italic text-[#E89465]">first thought</em> to
             sustained growth.
           </h2>
         </motion.div>
@@ -78,7 +78,7 @@ export const WhyChooseUs = () => {
                 className="group bg-[#0F2A47] hover:bg-[#13355A] transition-colors duration-500 p-8 md:p-10"
               >
                 <div className="flex items-center justify-between mb-10">
-                  <Icon strokeWidth={1.2} className="w-7 h-7 text-[#F37C2C]" />
+                  <Icon strokeWidth={1.2} className="w-7 h-7 text-[#C0561D]" />
                   <span className="font-serif text-2xl font-light text-[#F2F6FB]/30 tabular-nums">
                     0{i + 1}
                   </span>
@@ -110,7 +110,7 @@ export const WhyChooseUs = () => {
             ["Local Expertise", "Pan-India Perspective"],
           ].map(([a, b]) => (
             <div key={a} className="flex flex-col gap-1">
-              <span className="text-[10px] tracking-[0.28em] uppercase text-[#F37C2C]">
+              <span className="text-[10px] tracking-[0.28em] uppercase text-[#C0561D]">
                 {a}
               </span>
               <span className="text-[14px] font-light text-[#F2F6FB]/80">
