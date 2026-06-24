@@ -50,7 +50,7 @@ export const Navigation = () => {
           </span>
           <span
             className={`hidden sm:inline text-[9px] uppercase tracking-[0.28em] ${
-              scrolled || open ? "text-[#5A7BA0]" : "text-[#FF4F00]"
+              scrolled || open ? "text-[#5A7BA0]" : "text-[#CF5B2E]"
             } transition-colors`}
           >
             Studio &amp; Asset Mgmt
@@ -63,7 +63,7 @@ export const Navigation = () => {
               key={l.href}
               data-testid={`nav-link-${l.label.toLowerCase().replace(/\s/g, "-")}`}
               onClick={() => scrollTo(l.href)}
-              className={`text-[12px] uppercase tracking-[0.22em] font-light hover:text-[#FF4F00] transition-colors ${
+              className={`text-[12px] uppercase tracking-[0.22em] font-light hover:text-[#CF5B2E] transition-colors ${
                 scrolled ? "text-[#1F3A5F]" : "text-[#F2F6FB]/90"
               }`}
             >

@@ -13,7 +13,7 @@ export const FinalCTA = () => {
       className="relative bg-[#0F2A47] py-28 md:py-40 overflow-hidden"
     >
       {/* Soft accent glow */}
-      <div className="absolute -top-40 -right-20 w-[480px] h-[480px] rounded-full bg-[#FF4F00]/15 blur-3xl" />
+      <div className="absolute -top-40 -right-20 w-[480px] h-[480px] rounded-full bg-[#CF5B2E]/15 blur-3xl" />
       <div className="absolute -bottom-32 -left-20 w-[420px] h-[420px] rounded-full bg-[#1F3A5F]/40 blur-3xl" />
 
       <div className="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-12 text-center">
@@ -22,7 +22,7 @@ export const FinalCTA = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
-          className="text-[10px] tracking-[0.32em] uppercase text-[#FF4F00]"
+          className="text-[10px] tracking-[0.32em] uppercase text-[#CF5B2E]"
         >
           The Basic Ecosystem
         </motion.span>
@@ -62,7 +62,7 @@ export const FinalCTA = () => {
           <button
             data-testid="final-cta-consultation"
             onClick={() => scrollTo("#consultation")}
-            className="group inline-flex items-center justify-between gap-8 bg-[#F2F6FB] text-[#0F2A47] hover:bg-[#FF4F00] hover:text-[#F2F6FB] transition-all duration-500 px-8 py-4 text-[11px] uppercase tracking-[0.28em]"
+            className="group inline-flex items-center justify-between gap-8 bg-[#F2F6FB] text-[#0F2A47] hover:bg-[#CF5B2E] hover:text-[#F2F6FB] transition-all duration-500 px-8 py-4 text-[11px] uppercase tracking-[0.28em]"
           >
             Book a Consultation
             <ArrowUpRight size={16} className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
@@ -70,7 +70,7 @@ export const FinalCTA = () => {
           <button
             data-testid="final-cta-ecosystem"
             onClick={() => scrollTo("#how")}
-            className="group inline-flex items-center gap-3 text-[#F2F6FB] hover:text-[#FF4F00] px-2 py-4 text-[11px] uppercase tracking-[0.28em] transition-colors"
+            className="group inline-flex items-center gap-3 text-[#F2F6FB] hover:text-[#CF5B2E] px-2 py-4 text-[11px] uppercase tracking-[0.28em] transition-colors"
           >
             Explore the Ecosystem
             <span className="h-px w-8 bg-current transition-all group-hover:w-12" />

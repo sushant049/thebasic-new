@@ -45,12 +45,12 @@ export const WhoWeWorkWith = () => {
             className="md:col-span-5"
           >
             <div className="flex items-center gap-3 mb-6">
-              <span className="h-px w-10 bg-[#FF4F00]" />
+              <span className="h-px w-10 bg-[#CF5B2E]" />
               <span className="eyebrow">Who We Work With</span>
             </div>
             <h2 className="font-serif text-4xl md:text-5xl font-light text-[#0F2A47] leading-[1.05] tracking-tight">
               Owners who want their properties to{" "}
-              <em className="not-italic text-[#FF4F00]">perform.</em>
+              <em className="not-italic text-[#CF5B2E]">perform.</em>
             </h2>
           </motion.div>
           <motion.p

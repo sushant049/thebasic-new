@@ -41,8 +41,8 @@ export const Hero = () => {
           transition={{ duration: 1, delay: 0.3 }}
           className="flex items-center gap-3 mb-6 md:mb-8"
         >
-          <span className="h-px w-10 bg-[#FF4F00]" />
-          <span className="text-[10px] tracking-[0.32em] uppercase text-[#FF4F00]">
+          <span className="h-px w-10 bg-[#CF5B2E]" />
+          <span className="text-[10px] tracking-[0.32em] uppercase text-[#CF5B2E]">
             Studio &amp; Asset Management
           </span>
         </motion.div>
@@ -84,7 +84,7 @@ export const Hero = () => {
               <button
                 data-testid="hero-cta-consultation"
                 onClick={() => scrollTo("#consultation")}
-                className="group w-full sm:w-auto inline-flex items-center justify-between gap-8 bg-[#FF4F00] text-[#F2F6FB] hover:bg-[#F2F6FB] hover:text-[#0F2A47] transition-all duration-500 px-7 py-4 text-[11px] uppercase tracking-[0.28em] whitespace-nowrap"
+                className="group w-full sm:w-auto inline-flex items-center justify-between gap-8 bg-[#CF5B2E] text-[#F2F6FB] hover:bg-[#F2F6FB] hover:text-[#0F2A47] transition-all duration-500 px-7 py-4 text-[11px] uppercase tracking-[0.28em] whitespace-nowrap"
               >
                 Book a Consultation
                 <ArrowUpRight size={16} className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />

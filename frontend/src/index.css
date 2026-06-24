@@ -17,7 +17,7 @@ body {
 }
 
 ::selection {
-    background: #FF4F00;
+    background: #CF5B2E;
     color: #F2F6FB;
 }
 
@@ -63,13 +63,13 @@ body {
         --secondary-foreground: 213 51% 25%;
         --muted: 213 47% 93%;
         --muted-foreground: 208 17% 43%;
-        --accent: 19 100% 50%;
+        --accent: 18 64% 49%;
         --accent-foreground: 213 47% 97%;
         --destructive: 0 62% 45%;
         --destructive-foreground: 213 47% 97%;
         --border: 211 50% 88%;
         --input: 211 50% 88%;
-        --ring: 19 100% 50%;
+        --ring: 18 64% 49%;
         --radius: 0;
     }
 }
