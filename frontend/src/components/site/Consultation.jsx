@@ -7,7 +7,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from ".
 import { toast } from "sonner";
 
 const inputClasses =
-  "h-12 w-full border-0 border-b border-[#5A7BA0]/50 rounded-none bg-transparent px-0 py-2 text-base text-[#0F2A47] placeholder:text-[#5A7BA0]/70 focus-visible:ring-0 focus-visible:border-[#C0561D] focus-visible:outline-none transition-colors font-light";
+  "h-12 w-full border-0 border-b border-[#5A7BA0]/50 rounded-none bg-transparent px-0 py-2 text-base text-[#0F2A47] placeholder:text-[#5A7BA0]/70 focus-visible:ring-0 focus-visible:border-[#FF4F00] focus-visible:outline-none transition-colors font-light";
 
 export const Consultation = () => {
   const [submitted, setSubmitted] = useState(false);
@@ -50,13 +50,13 @@ export const Consultation = () => {
           className="md:col-span-5 md:sticky md:top-32 self-start"
         >
           <div className="flex items-center gap-3 mb-6">
-            <span className="h-px w-10 bg-[#C0561D]" />
+            <span className="h-px w-10 bg-[#FF4F00]" />
             <span className="eyebrow">Book a Consultation</span>
           </div>
           <h2 className="font-serif text-4xl md:text-5xl lg:text-[56px] font-light text-[#0F2A47] leading-[1.05] tracking-tight">
             Have a property,
             <br />
-            <em className="not-italic text-[#C0561D]">villa, building,</em>
+            <em className="not-italic text-[#FF4F00]">villa, building,</em>
             <br />
             or land?
           </h2>
@@ -74,7 +74,7 @@ export const Consultation = () => {
               <a
                 href="mailto:connect@thebasic.co.in"
                 data-testid="contact-email"
-                className="font-serif text-xl text-[#0F2A47] hover:text-[#C0561D] transition-colors"
+                className="font-serif text-xl text-[#0F2A47] hover:text-[#FF4F00] transition-colors"
               >
                 connect@thebasic.co.in
               </a>
@@ -86,7 +86,7 @@ export const Consultation = () => {
               <a
                 href="tel:+917205000123"
                 data-testid="contact-mobile"
-                className="font-serif text-xl text-[#0F2A47] hover:text-[#C0561D] transition-colors"
+                className="font-serif text-xl text-[#0F2A47] hover:text-[#FF4F00] transition-colors"
               >
                 +91 72050 00123
               </a>
@@ -113,8 +113,8 @@ export const Consultation = () => {
               data-testid="consultation-success"
               className="bg-[#E6EEF7] border border-[#D3E0EE] p-10 md:p-14 flex flex-col items-start"
             >
-              <div className="w-12 h-12 rounded-full bg-[#C0561D]/15 border border-[#C0561D]/30 flex items-center justify-center">
-                <Check className="text-[#C0561D]" strokeWidth={1.5} />
+              <div className="w-12 h-12 rounded-full bg-[#FF4F00]/15 border border-[#FF4F00]/30 flex items-center justify-center">
+                <Check className="text-[#FF4F00]" strokeWidth={1.5} />
               </div>
               <h3 className="font-serif text-3xl md:text-4xl font-light text-[#0F2A47] mt-6">
                 Thank you, {form.name.split(" ")[0] || "there"}.
@@ -126,7 +126,7 @@ export const Consultation = () => {
               <button
                 data-testid="consultation-reset"
                 onClick={() => { setSubmitted(false); setForm({ name: "", email: "", phone: "", propertyType: "", message: "" }); }}
-                className="mt-10 text-[11px] uppercase tracking-[0.28em] text-[#1F3A5F] hover:text-[#C0561D] transition-colors"
+                className="mt-10 text-[11px] uppercase tracking-[0.28em] text-[#1F3A5F] hover:text-[#FF4F00] transition-colors"
               >
                 Submit Another Enquiry
               </button>
@@ -188,7 +188,7 @@ export const Consultation = () => {
                   >
                     <SelectTrigger
                       data-testid="form-property-type"
-                      className="h-12 w-full border-0 border-b border-[#5A7BA0]/50 rounded-none bg-transparent px-0 text-base text-[#0F2A47] focus:ring-0 focus:border-[#C0561D]"
+                      className="h-12 w-full border-0 border-b border-[#5A7BA0]/50 rounded-none bg-transparent px-0 text-base text-[#0F2A47] focus:ring-0 focus:border-[#FF4F00]"
                     >
                       <SelectValue placeholder="Select an option" />
                     </SelectTrigger>
@@ -213,7 +213,7 @@ export const Consultation = () => {
                   onChange={handleChange("message")}
                   placeholder="Location, size, current status, and what you're hoping to achieve..."
                   rows={4}
-                  className="w-full border-0 border-b border-[#5A7BA0]/50 rounded-none bg-transparent px-0 py-3 text-base text-[#0F2A47] placeholder:text-[#5A7BA0]/70 focus-visible:ring-0 focus-visible:border-[#C0561D] focus-visible:outline-none transition-colors font-light resize-none"
+                  className="w-full border-0 border-b border-[#5A7BA0]/50 rounded-none bg-transparent px-0 py-3 text-base text-[#0F2A47] placeholder:text-[#5A7BA0]/70 focus-visible:ring-0 focus-visible:border-[#FF4F00] focus-visible:outline-none transition-colors font-light resize-none"
                 />
               </div>
 
@@ -221,7 +221,7 @@ export const Consultation = () => {
                 <button
                   type="submit"
                   data-testid="consultation-form-submit"
-                  className="group inline-flex items-center justify-between gap-8 bg-[#0F2A47] text-[#F2F6FB] hover:bg-[#C0561D] transition-all duration-500 px-8 py-4 text-[11px] uppercase tracking-[0.28em]"
+                  className="group inline-flex items-center justify-between gap-8 bg-[#0F2A47] text-[#F2F6FB] hover:bg-[#FF4F00] transition-all duration-500 px-8 py-4 text-[11px] uppercase tracking-[0.28em]"
                 >
                   Send Enquiry
                   <Send size={14} className="transition-transform group-hover:translate-x-1" />

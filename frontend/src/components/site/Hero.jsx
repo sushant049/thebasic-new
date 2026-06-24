@@ -41,8 +41,8 @@ export const Hero = () => {
           transition={{ duration: 1, delay: 0.3 }}
           className="flex items-center gap-3 mb-6 md:mb-8"
         >
-          <span className="h-px w-10 bg-[#C0561D]" />
-          <span className="text-[10px] tracking-[0.32em] uppercase text-[#C0561D]">
+          <span className="h-px w-10 bg-[#FF4F00]" />
+          <span className="text-[10px] tracking-[0.32em] uppercase text-[#FF4F00]">
             Studio &amp; Asset Management
           </span>
         </motion.div>
@@ -59,7 +59,7 @@ export const Hero = () => {
               className="font-serif font-light text-[#F2F6FB] text-[40px] xs:text-5xl sm:text-6xl md:text-7xl lg:text-[88px] leading-[1.02] md:leading-[0.98] tracking-tight"
             >
               We turn properties into{" "}
-              <em className="not-italic font-normal text-[#E89465]">
+              <em className="not-italic font-normal text-[#FC6A03]">
                 profitable assets.
               </em>
             </h1>
@@ -84,7 +84,7 @@ export const Hero = () => {
               <button
                 data-testid="hero-cta-consultation"
                 onClick={() => scrollTo("#consultation")}
-                className="group w-full sm:w-auto inline-flex items-center justify-between gap-8 bg-[#C0561D] text-[#F2F6FB] hover:bg-[#F2F6FB] hover:text-[#0F2A47] transition-all duration-500 px-7 py-4 text-[11px] uppercase tracking-[0.28em] whitespace-nowrap"
+                className="group w-full sm:w-auto inline-flex items-center justify-between gap-8 bg-[#FF4F00] text-[#F2F6FB] hover:bg-[#F2F6FB] hover:text-[#0F2A47] transition-all duration-500 px-7 py-4 text-[11px] uppercase tracking-[0.28em] whitespace-nowrap"
               >
                 Book a Consultation
                 <ArrowUpRight size={16} className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
@@ -92,7 +92,7 @@ export const Hero = () => {
               <button
                 data-testid="hero-cta-ecosystem"
                 onClick={() => scrollTo("#services")}
-                className="group inline-flex items-center gap-3 text-[#F2F6FB] hover:text-[#E89465] px-2 py-2 text-[11px] uppercase tracking-[0.28em] transition-colors whitespace-nowrap"
+                className="group inline-flex items-center gap-3 text-[#F2F6FB] hover:text-[#FC6A03] px-2 py-2 text-[11px] uppercase tracking-[0.28em] transition-colors whitespace-nowrap"
               >
                 Explore Our Services
                 <span className="h-px w-8 bg-current transition-all group-hover:w-12" />
@@ -114,7 +114,7 @@ export const Hero = () => {
               key={k}
               className="flex items-baseline gap-5 sm:flex-col sm:items-start sm:gap-3"
             >
-              <span className="font-serif text-5xl sm:text-6xl md:text-7xl text-[#E89465] font-light tracking-tight leading-[0.9] shrink-0">
+              <span className="font-serif text-5xl sm:text-6xl md:text-7xl text-[#FC6A03] font-light tracking-tight leading-[0.9] shrink-0">
                 {k}
               </span>
               <span className="text-[11px] sm:text-[10px] tracking-[0.22em] sm:tracking-[0.26em] uppercase text-[#F2F6FB]/80 leading-snug">

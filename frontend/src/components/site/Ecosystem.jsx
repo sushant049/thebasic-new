@@ -23,13 +23,13 @@ export const Ecosystem = () => {
           className="text-center max-w-3xl mx-auto mb-16 md:mb-20"
         >
           <div className="flex items-center justify-center gap-3 mb-6">
-            <span className="h-px w-10 bg-[#C0561D]" />
+            <span className="h-px w-10 bg-[#FF4F00]" />
             <span className="eyebrow">The Basic Ecosystem</span>
-            <span className="h-px w-10 bg-[#C0561D]" />
+            <span className="h-px w-10 bg-[#FF4F00]" />
           </div>
           <h2 className="font-serif text-4xl md:text-5xl font-light text-[#0F2A47] leading-[1.05] tracking-tight">
             Strategy. Design. Operate.{" "}
-            <em className="not-italic text-[#C0561D]">Maximize returns.</em>
+            <em className="not-italic text-[#FF4F00]">Maximize returns.</em>
           </h2>
           <p className="mt-5 text-[#1F3A5F]/80 font-light text-base md:text-lg">
             Two specialised arms. One accountable team.
@@ -47,7 +47,7 @@ export const Ecosystem = () => {
             className="md:col-span-5 bg-[#F2F6FB] border border-[#D3E0EE] p-8 md:p-10"
             data-testid="ecosystem-studio-card"
           >
-            <span className="text-[10px] tracking-[0.32em] uppercase text-[#C0561D]">
+            <span className="text-[10px] tracking-[0.32em] uppercase text-[#FF4F00]">
               The Basic Studio
             </span>
             <h3 className="mt-3 font-serif text-3xl md:text-4xl font-light text-[#0F2A47] leading-tight">
@@ -61,7 +61,7 @@ export const Ecosystem = () => {
                 "Branding & Positioning",
               ].map((it) => (
                 <li key={it} className="flex items-center gap-3">
-                  <span className="h-px w-5 bg-[#C0561D]" />
+                  <span className="h-px w-5 bg-[#FF4F00]" />
                   <span>{it}</span>
                 </li>
               ))}
@@ -73,7 +73,7 @@ export const Ecosystem = () => {
             <div className="relative w-full flex items-center justify-center">
               <div className="hidden md:block absolute left-0 right-0 top-1/2 -translate-y-1/2 border-t border-dashed border-[#5A7BA0]/50" />
               <div className="relative z-10 w-32 h-32 md:w-40 md:h-40 rounded-full bg-[#F2F6FB] border border-[#D3E0EE] flex flex-col items-center justify-center text-center px-2">
-                <span className="font-serif text-[#C0561D] text-3xl md:text-4xl font-light leading-none">
+                <span className="font-serif text-[#FF4F00] text-3xl md:text-4xl font-light leading-none">
                   B
                 </span>
                 <p className="mt-2 text-[10px] tracking-[0.18em] uppercase text-[#0F2A47] leading-tight">
@@ -96,7 +96,7 @@ export const Ecosystem = () => {
             className="md:col-span-5 bg-[#F2F6FB] border border-[#D3E0EE] p-8 md:p-10"
             data-testid="ecosystem-basic-card"
           >
-            <span className="text-[10px] tracking-[0.32em] uppercase text-[#C0561D]">
+            <span className="text-[10px] tracking-[0.32em] uppercase text-[#FF4F00]">
               The Basic
             </span>
             <h3 className="mt-3 font-serif text-3xl md:text-4xl font-light text-[#0F2A47] leading-tight">
@@ -110,7 +110,7 @@ export const Ecosystem = () => {
                 "Revenue Optimization",
               ].map((it) => (
                 <li key={it} className="flex items-center gap-3">
-                  <span className="h-px w-5 bg-[#C0561D]" />
+                  <span className="h-px w-5 bg-[#FF4F00]" />
                   <span>{it}</span>
                 </li>
               ))}
@@ -195,7 +195,7 @@ export const Ecosystem = () => {
             <button
               data-testid="ecosystem-cta-consultation"
               onClick={() => document.querySelector("#consultation")?.scrollIntoView({ behavior: "smooth" })}
-              className="mt-8 group inline-flex items-center gap-3 text-[#0F2A47] hover:text-[#C0561D] text-[11px] uppercase tracking-[0.28em] transition-colors"
+              className="mt-8 group inline-flex items-center gap-3 text-[#0F2A47] hover:text-[#FF4F00] text-[11px] uppercase tracking-[0.28em] transition-colors"
             >
               Book a Consultation
               <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
