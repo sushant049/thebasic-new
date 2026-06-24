@@ -56,7 +56,7 @@ export const Hero = () => {
           >
             <h1
               data-testid="hero-headline"
-              className="font-serif font-light text-[#F2F6FB] text-[40px] xs:text-5xl sm:text-6xl md:text-7xl lg:text-[88px] leading-[1.02] md:leading-[0.98] tracking-tight"
+              className="font-serif font-normal text-white text-[40px] xs:text-5xl sm:text-6xl md:text-7xl lg:text-[88px] leading-[1.02] md:leading-[0.98] tracking-tight"
             >
               We turn properties into{" "}
               <em className="not-italic font-normal text-[#FC6A03]">
