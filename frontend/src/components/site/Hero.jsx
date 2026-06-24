@@ -105,13 +105,12 @@ export const Hero = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.8 }}
-          className="mt-20 pt-8 border-t border-[#F2F6FB]/15 grid grid-cols-2 md:grid-cols-4 gap-y-6 gap-x-8"
+          className="mt-20 pt-8 border-t border-[#F2F6FB]/15 grid grid-cols-3 gap-y-6 gap-x-8"
         >
           {[
             ["50+", "Projects Advised & Managed"],
-            ["250+", "Hospitality Keys Operated"],
-            ["₹250Cr+", "Asset Value Created"],
-            ["95%+", "Average Occupancy Achieved"],
+            ["100+", "Serving Rooms"],
+            ["85%", "Average Occupancy"],
           ].map(([k, v]) => (
             <div key={k} className="flex flex-col gap-1">
               <span className="font-serif text-3xl md:text-4xl text-[#FFB37A] font-light tracking-tight">

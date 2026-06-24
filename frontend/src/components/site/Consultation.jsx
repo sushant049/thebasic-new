@@ -72,11 +72,23 @@ export const Consultation = () => {
                 Email
               </div>
               <a
-                href="mailto:hello@thebasicecosystem.com"
+                href="mailto:connect@thebasic.co.in"
                 data-testid="contact-email"
                 className="font-serif text-xl text-[#0F2A47] hover:text-[#F37C2C] transition-colors"
               >
-                hello@thebasicecosystem.com
+                connect@thebasic.co.in
+              </a>
+            </div>
+            <div>
+              <div className="text-[10px] tracking-[0.28em] uppercase text-[#5A7080] mb-1">
+                Mobile
+              </div>
+              <a
+                href="tel:+917205000123"
+                data-testid="contact-mobile"
+                className="font-serif text-xl text-[#0F2A47] hover:text-[#F37C2C] transition-colors"
+              >
+                +91 72050 00123
               </a>
             </div>
             <div>

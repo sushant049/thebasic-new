@@ -23,7 +23,7 @@ export const Footer = () => {
             </p>
             <div className="mt-8 flex items-center gap-5">
               <a
-                href="mailto:hello@thebasicecosystem.com"
+                href="mailto:connect@thebasic.co.in"
                 data-testid="footer-email"
                 className="w-10 h-10 border border-[#F2F6FB]/20 hover:border-[#F37C2C] flex items-center justify-center transition-colors"
                 aria-label="Email"
@@ -86,7 +86,8 @@ export const Footer = () => {
               Contact
             </div>
             <ul className="space-y-3 text-sm font-light text-[#F2F6FB]/75">
-              <li>hello@thebasicecosystem.com</li>
+              <li>connect@thebasic.co.in</li>
+              <li>+91 72050 00123</li>
               <li>Bengaluru · Mumbai · Goa</li>
               <li>
                 <a href="#consultation" className="underline-offset-4 hover:text-[#F37C2C] hover:underline transition-colors">
